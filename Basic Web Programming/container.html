@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 이 문서는 html5 버전의 문서이니까, parsing 똑바로 해라 -->
+<!-- 문서를 선언한다. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- character set 글꼴 세팅 유니버셜 코드라는 뜻으로 유니코드 중의 한 종류, 글꼴 체계를 메타 태그로 세팅해주는 것 -->
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <!-- content: Internet explorer로 실행하면 Edge를 실행 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- viewport: 가로폭을 감지하는 것, content: 디바이스에 맞춰서 너비 설정 (viewport가 제대로 설정 안되면 모바일로 웹사이트를 들어갔을 떄 PC화면으로 바뀌는 에러등이 있음) -->
+  <title>Document</title>
+  <style>
+    div{
+      width:100px;
+      height:100px;
+      background-color: #ccc;
+      display: block;
+      margin:px;
+    }
+    span{
+      width:100px;
+      height:100px;
+      background-color: #ccc;
+    }
+    .px{
+      width:10px;
+      height:10px;
+      background-color: red; 
+      
+      border: 2px solid black;
+    }
+  </style>
+  <!-- 스타일을 하고 난 후 Devtools 탭을 기계적으로 확인해야함. -->
+</head>
+<body>
+  <div>hello</div>
+  bye
+  <span>hi</span>
+  bye
+  <!-- 투명 가방 div의 구조화, 보이지 않지만 엄청나게 많이 쓰는 1등, 나누는 작업을 많이 해서 분류를 해야함. 그릇에 맞게 음식을 세팅하는 것처럼 구분해야한다. 마치 빈 종이를 접어 구역을 만드는 것처럼 활용.-->
+  <ul></ul>
+  <hr>
+  <div>hello</div>
+  <div>hi</div>
+  <br>
+  <span>hello</span>
+  <span>hi</span>
+  <div class="px"></div>
+</body>
+</html>

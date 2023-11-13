@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <!-- 은정씨에게 기초데이터를 받았다. -->
+    <!-- 은정씨 언니 오빠들 모두 li 태그에 담아보자. -->
+    <ul>
+
+    </ul>
+  </div>
+  <script>
+    // javascript 객체 조회 javascript 에서 키 목록을 뽑을 수 있는 기능을 찾아보자
+    let eunjungFamily = {
+      male : "이경배",
+      female : ["이은혜", "이은주", "이은정"],
+      cousin : [],
+    }
+    // Object.Keys
+    // console.log(eunjungFamily)
+    // console.log(eunjungFamily.male)
+    // console.log(eunjungFamily.female)
+
+    // console.log(Object.keys(eunjungFamily));
+    // console.log(Object.values(eunjungFamily))
+
+    // KeyNames
+    let keyNames = Object.keys(eunjungFamily);
+    console.log(keyNames)
+
+    // console.log(keyNames);
+    // console.log(eunjungFamily[keyNames[0]]);
+
+    // for(let i = 0; i < eunjungFamily[keyNames[1]].length; i++) {
+    //   console.log(eunjungFamily[keyNames[1]][i]);
+    //   console.log(eunjungFamily.female[i]);
+    // }
+    
+    // namesArray (for문으로 어떻게 바꿀 수 있을까)
+    // let namesArray = [];
+    // namesArray[0] = eunjungFamily[keyNames[0]]; // 이경배
+    // namesArray[1] = eunjungFamily[keyNames[1]][0]; // 이은혜
+    // namesArray[2] = eunjungFamily[keyNames[1]][1]; // 이은주
+    // namesArray[3] = eunjungFamily[keyNames[1]][2]; // 이은정
+    // console.log(namesArray);    
+
+    // namesArray for문으로 배열로 변경
+    let namesArray = [];
+    for (i = 0; i < 1; i++) {
+      let names =  eunjungFamily[keyNames[i]]
+      
+      console.log(names)
+    }
+
+
+    //list 태그 생성해서 값 넣기
+    // let ul = document.getElementById('root').children[0]
+    // console.dir(ul)
+    // ul.innerText = "은정이네 언니오빠"
+    // let li = ul.children
+    // console.dir(li)
+
+    // for(index = 0; index < namesArray.length; index++) {
+    //   let aLi = document.createElement('li');
+    //   ul.appendChild(aLi);
+    //   li[index].textContent = namesArray[index];
+    // }
+      
+    
+    // 배열로 for문 사용
+
+
+  
+    // // 배열을 문자열로
+    // let famString = ""
+    // for (i = 0; i < eunjungFamily.female.length; i++) {
+    //   famString = famString + eunjungFamily.female[i];
+    // }
+    // console.log(famString);
+    // famString =  eunjungFamily.male + famString;
+    // console.log(famString);
+
+  </script>
+</body>
+</html>

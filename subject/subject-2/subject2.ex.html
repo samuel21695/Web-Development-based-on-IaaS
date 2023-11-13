@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {margin: 0; padding: 0;}
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    // init
+    const root = document.getElementById('root');
+    root.style.width = "100vw";
+    root.style.height = "100vh";
+    root.style.backgroundColor = "#333";
+    root.style.color = "#ccc";
+    root.style.display = "flex";
+    root.style.justifyContent = "center";
+    root.style.alignItems = "center";
+
+    const textInfo = {
+      subjectName : "프로그래밍 기초",
+      examTimeStart : "2023-09-08, 2교시 10시20분",
+      examTimeEnd : "2023-09-08, 6교시 16시00분",
+      examType : "정규평가"
+    }
+
+    const titleTag = document.createElement('h1');
+    titleTag.innerText = textInfo.examType;
+    const subTitleTag = document.createElement('h2');
+    subTitleTag.innerText = textInfo.subjectName;
+    const timeTag = document.createElement('h3');
+    timeTag.innerText = textInfo.examTimeStart; + "~" + textInfo.examTimeEnd;
+
+    root.appendChild(titleTag);
+    titleTag.appendChild(subTitleTag);   
+    subTitleTag.appendChild(timeTag) 
+
+
+  </script>
+</body>
+</html>

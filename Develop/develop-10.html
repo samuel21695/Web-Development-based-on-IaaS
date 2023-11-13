@@ -1,0 +1,20 @@
+<body>
+  <div id="root"></div>
+  <script>
+    // id값을 활용해 문서의 특정위치를 식별했다.
+    let root = document.getElementById('root');
+
+    // 함수 선언
+    function tagMaker(parent, tagName) {
+      // 지역변수 방식으로 매개변수의 값을 사용한다는 의도가 전제이다.
+      // 호출할 '때' 결정한다.
+      let tag = document.createElement(tagName);
+      tag.textContent = "테스트";
+      // 부모를 뜻하는 parent 매개변수도 호출할 "때" 결정한다.
+      parent.appendChild(tag);
+    }
+
+    tagMaker(root, "li");
+    // 매개변수의 순서를 지켜서 '호출'로 문서의 일부를 제작했다.
+  </script>
+</body>

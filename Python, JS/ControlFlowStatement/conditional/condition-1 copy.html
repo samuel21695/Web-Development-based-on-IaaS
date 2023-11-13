@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <button>click</button>
+  </div>
+  <script>
+    let btn = window.document.body.children[0].children[0];
+    // id root을 식별했다.
+    let root = document.getElementById('root');
+    console.dir(btn);
+
+    
+    let handler = true; // 초기화
+    btn.addEventListener('click', function() {
+
+      if(handler === true) {
+        handler = false;
+        console.log(handler);
+      } else {
+        handler = true;
+        console.log(handler);
+      }
+    //  -------------------------------------
+      if(handler === true) {
+        window.document.body.style.backgroundColor = "black";
+      } else {
+        window.document.body.style.backgroundColor = "white";
+      }
+    // ---------아래의 코드는 문제가 발생한다.---------------
+      if(handler === true) {
+        root.textContent = "공욱재";
+      } else {
+        root.textContent = "";
+        let createButton = document.createElement('button');
+        createButton.textContent = "click";
+        root.appendChild(createButton);
+      }
+
+    });
+
+    const doc = document
+    console.dir(doc)
+  </script>
+</body>
+</html>

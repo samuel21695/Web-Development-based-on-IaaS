@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    #root{
+      width: 100vw;
+      height: 100vh;
+      margin:0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      background: #000;
+    }
+    .container_1{
+      background-color: #92AC98;
+      display: flex;
+      flex-direction: column;
+      flex:3;
+      justify-content:end;
+    }
+    .container_1_1{
+      display: flex;
+      justify-content:space-around;
+      flex:0.45;
+    }
+    .circle{
+      width: 10vw;
+      height: 10vw;
+      border-radius: 50%;
+      background-color: #484848;
+    }
+    .container_2{
+      display: flex;
+      background-color: #484848;
+      justify-content:space-between;
+      flex:0.5;
+    }
+    .container_2_1{
+      display: flex;
+      align-items: center;
+      justify-content:space-evenly;
+      flex:0.3 ;
+    }
+    .container_2_1_1{
+      width: 5vw;
+      height: 5vw;
+      background-color: #D9D9D9;
+      border-radius: 50%;
+    } 
+    .container_2_1_2{
+      font-size: 8px;
+      color: #D9D9D9
+    }
+    .container_2_2{
+      display: flex;
+      flex:0.2;
+      align-items: center;
+      justify-content:space-evenly;
+    }
+    .dotdot{
+      width: 3vw;
+      height: 3vw;
+      border-radius: 50%;
+      background-color: #D9D9D9;
+    }
+    .container_3{
+      background-color: #7E867B;
+      flex: 5;
+    }
+    .container_4{
+      display:flex;
+      background-color: #92AC98;
+      flex-direction: column;
+      flex: 4;
+    }
+    .container_4_1{
+      display:flex;
+      flex: 1;
+    }
+    .icon{
+      width: 5vw;
+      height: 5vh;
+      display:flex;
+      justify-content: center;
+      flex: 2;
+      font-size: 14px;
+      color:#D9D9D9
+    }
+    .dot{
+      display: flex;
+      flex:1;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .container_4_2{
+      flex: 4;
+      display: flex;
+      justify-content: center;
+    }
+    .w-80vw{width: 80vw;}
+    .container_5{
+      background-color: #484848;
+      flex:2;
+    }
+    h1{font-size: 12px;}
+    p{font-size: 8px;}
+  </style>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js">
+
+  </script>
+</head>
+<body>
+  <div id="root">
+    <div class="container_1">
+      <div class="container_1_1">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+
+      </div>
+    </div>
+    <div class="container_2">
+      <div class="container_2_1">
+        <div class="container_2_1_1"> </div>
+        <p class="container_2_1_2">kongukjae</p>
+      </div>
+      <div class="container_2_2">
+        <div class="dotdot"></div>
+        <div class="dotdot"></div>
+        <div class="dotdot"></div>
+      </div>
+    </div>
+    <div class="container_3">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="container_4">
+      <div class="container_4_1">
+        <div class="icon">
+          <img src="icons/heart-solid.svg">
+        </div>
+        <div class="dot">
+          <div class="dotdot"></div>
+          <div class="dotdot"></div>
+          <div class="dotdot"></div>
+        </div>
+        <div class="icon">
+          <img src="icons/floppy-disk-solid.svg">
+        </div>
+      </div>
+      <div class="container_4_2">
+        <div class="w-80vw">
+          <h1>kongukjae</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, vero repudiandae, odio illo dignissimos voluptatum nostrum totam expedita quam a unde harum sunt laborum consequuntur perspiciatis veniam? Quod, non ipsa!</p>
+        </div>
+      </div>
+    </div>
+    <div class="container_5">
+
+    </div>
+  </div>
+</body>
+</html>

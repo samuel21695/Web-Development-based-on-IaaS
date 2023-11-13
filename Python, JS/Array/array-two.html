@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <ul></ul>
+  </div>
+
+  <script>
+  const studentList = [
+    "김우진",
+    "김현",
+    "방승희",
+    "변호녕",
+    "소사무엘",
+    "송영준",
+    "신동현",
+    "오승민",
+    "유승민",
+    "윤준현",
+    "이민구",
+    "이유안",
+    "이은정",
+    "정영식",
+    "최성민",
+    "최은철",
+    "홍문기"
+  ];
+
+  const rainbow = ["red", "orange", "yellow", "green", "blue", "cyan", "purple", "salmon", "olive", "lightgreen", "gray", "pink", "brown", "black", "violet", "lightgray"];
+  const ul = document.getElementById('root').children[0];  
+  const li = document.getElementsByTagName('li');
+  console.dir(li);
+
+  for (i = 0; i < studentList.length; i++) {
+    let aLi = document.createElement('li');
+    document.body.appendChild(aLi);
+    li[i].textContent = studentList[i];
+    // aLi.textContent
+    li[i].style.color = rainbow[i];
+  }
+
+  // for (i = 0; i < studentList.length; i++) {
+  //   let createLi = document.createElement('li');
+  //   createLi.textContent = studentList[i];
+  //   ul.appendChild(createLi);
+  // }
+
+    // document.createElment('li')
+    // DOM API에 자식으로 추가하는 함수가 있는지
+  </script>
+  
+</body>
+</html>

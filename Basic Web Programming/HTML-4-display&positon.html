@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* 박스의 크기를 지정한 값으로 계산하도록 설정 */
+    }
+    #root {
+      width: 30vw; 
+      /* 브라우저 너비의 30% */
+      height: 30vh;
+      /* 브라우저 높이의 30% */
+      background-color: #cacaca;
+      /* 구분을 위해 약간의 회색 처리 */
+    }
+    #root > div {
+    /* id가 root인 요소인 자식 요소인 div 요소를 '모두' 선택 */
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    position: relative;
+    /* 절대 위치 지정 */
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <!-- 아래 3개의 요소는 어떻게 보일까요 -->
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>아이디어 도출 방법</h1>
+  
+  <ul>
+    <li>
+      <h2>브레인 스토밍</h2>
+      <p>브레인 스토밍은~</p>
+    </li>
+    <li>
+      <h2>SWOT 분석</h2>
+      <p>Strengths, Weakness, Opportunities, Threats</p>
+    </li>
+    <li>
+      <h2>피쉬본 다이어그램</h2>
+      <p>'물고기 뼈'처럼 그려가며 중간단계 점검</p>
+    </li>
+
+    <!-- 다크모드 토글 버튼 -->
+    <button id="toggleButton">다크모드</button>
+
+    <script>
+      const toggleButton = document.getElementById('toggleButton');
+
+      toggleButton.addEventListener('click', function() {
+        const body = document.querySelector('body');
+
+        if (body.style.backgroundColor === 'white') {
+          body.style.backgroundColor = 'black' ;
+          body.style.color = 'white';
+
+        } else {
+          body.style.backgroundColor = 'white';
+          body.style.color = 'black';
+
+        }
+      });
+    </script>
+  </ul>
+</body>
+</html>

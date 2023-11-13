@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      /* 시스템(컴퓨터)에 있는 일반적인 폰트를 설정했으며 1순위, 2순위. 3순위 등ㅇ으로 차순을 설정해주는 편이다. (시스템에 없는 글꼴일 수 있으므로)*/
+      font-family: "Arial", sans-serif;
+      /* 폰트크기를 결정할 떄 자주 사용하는 상대값 단위 rem */
+      font-size: 1rem;
+      color: black;
+      background-color: white;
+    }
+
+    h1,ul {
+      width: 80vw;
+      margin: 2vh auto;
+    }
+
+    /* 제목 스타일링 */
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2vh;
+      border-bottom: 2px solid grey;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      background-color: rgba(0, 0, 0, 0.1);
+      /* margin 의 4방향중 위아래 +좌우를 단축방식으로 처리한다. */
+      margin: 1vh 0;
+      padding: 2vh;
+      border-radius: 0.5rem;
+    }
+
+    h2{
+      font-size: 1.5rem;
+      margin-bottom: 1vh;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    
+  </style>
+</head>
+<body>
+  
+  <h1>아이디어 도출 방법</h1>
+  
+  <ul>
+    <li>
+      <h2>브레인 스토밍</h2>
+      <p>브레인 스토밍은~</p>
+    </li>
+    <li>
+      <h2>SWOT 분석</h2>
+      <p>Strengths, Weakness, Opportunities, Threats</p>
+    </li>
+    <li>
+      <h2>피쉬본 다이어그램</h2>
+      <p>'물고기 뼈'처럼 그려가며 중간단계 점검</p>
+    </li>
+
+    <!-- 다크모드 토글 버튼 -->
+    <button id="toggleButton">다크모드</button>
+
+    <script>
+      const toggleButton = document.getElementById('toggleButton');
+
+      toggleButton.addEventListener('click', function() {
+        const body = document.querySelector('body');
+
+        if (body.style.backgroundColor === 'white') {
+          body.style.backgroundColor = 'black' ;
+          body.style.color = 'white';
+
+        } else {
+          body.style.backgroundColor = 'white';
+          body.style.color = 'black';
+
+        }
+      });
+    </script>
+  </ul>
+</body>
+</html>

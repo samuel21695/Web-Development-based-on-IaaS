@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+    <h1 id="prompt-text">afdfsdafdsaf</h1>
+    <label for="color-value">tpye want color</label>
+    <input type="text" name="color-value" id="color-value">
+    <script>
+      let body = window.document.body
+      console.dir(body)
+      let colorValue = document.getElementById("color-value");
+      root.style.width="100px"
+      root.style.height="100px"
+      colorValue.addEventListener("change", function(){ root.style.backgroundColor = colorValue.value
+      })
+      let fontValue = document.getElementById("color-value");
+      colorValue.addEventListener("change",
+      function(){window.document.body.children[1].style.fontSize=colorValue.value})
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #root{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  form{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+</style>
+<body>
+  <div id="root">
+    <h1 id ="text-value"></h1>
+    <form id="student">
+      <label for="name"></label>
+      <input type="text" placeholder= "이름을 입력하세요" name="nameValue" id="name-value"/> 
+      <input type="button" value="제출" id="button">
+    </form>
+  </div>
+  <script>
+    const studentList = [
+      "김우진",
+      "김현",
+      "방승희",
+      "변호녕",
+      "소사무엘",
+      "송영준",
+      "신동현",
+      "오승민",
+      "윤준현",
+      "이민구",
+      "이은정",
+      "정영식",
+      "최성민",
+      "최은철",
+      "홍문기"
+    ]
+    
+
+    a = document
+    console.dir(a)
+    
+    let textValue = document.getElementById("text-value");
+    let nameValue = document.getElementById("name-value");
+    let btn = document.getElementById("button")
+    btn.addEventListener('click', function(){
+      for(let i = 0; i < studentList.length; i++) {
+
+        if (studentList[i] = nameValue.value) {
+          alert("존재하는 값입니다.");
+          textValue.textContent   = studentList[i] + "님 환영합니다!";
+          return true;
+        } else { alert("존재하지 않는 값입니다.");
+          return false }
+        
+      }
+    })
+    
+      // for(let i = 0; i<studentList.length; i++) { 
+      //   if (studentList[i] === nameValue) {
+      //   console.log("일치합니다.");
+      //   }
+      // }
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20230825_웹프로그래밍기본_평가제출_훈련생명</title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    #root{
+      width:1920px;
+      height: 1080px;
+      display: flex;
+      flex-direction: column  ;
+    }
+    hr{
+      height: 1px;
+      background-color: #2196f3;
+    }
+    /* class를 필요할 때마다 할당하여 속성처럼 활용하기 위해 아래와 같이 작성하였음. */
+    .w-10{width: 10px;}
+    .w-20{width: 20px;}
+    .w-234{width: 234px;}
+    .w-335{width: 335px;}
+    .w-360{width: 360px;}
+    .w-384{width: 384px;}
+    .w-960{width: 960px;}
+    .w-1000{width: 1000px;}
+    .w-1920{width: 1920px;}
+    /* width */
+    .h-15{height: 15px;}
+    .h-20{height: 20px;}
+    .h-140{height: 140px;}
+    .h-221{height: 221px;}
+    .h-414{height: 414px;}
+    .h-573{height: 573px;}
+    /* height */
+    .colorW{color: #ffffff;}
+    .color-219{color: #2196f3}
+    .bgc-219{background-color: #2196f3;}
+    .bgcW{background-color: #ffffff;}
+    /* color */
+    .fs-12{font-size: 12px;}
+    .fs-96{font-size: 96px;}
+    .fw-500{font-weight: 500;}
+    .fw-700{font-weight: 700;}
+    .fw-900{font-weight: 900;}
+    .line{line-height: 80%;}
+    .border{border: 1px solid black;}
+    /* font */
+    .m-20{margin: 20px;}
+    .mt-17{margin-top: 17px;}
+    .mt-33{margin-top: 33px;}
+    .mt-114{margin-top: 114px;}
+    .mt-160{margin-top: 160px;}
+    .mt-352{margin-top: 352px;}
+    .mb-0{margin-bottom: 0px;}
+    .mb-10{margin-bottom: 10px;}
+    .ml-20{margin-left: 20px;}
+    .ml-32{margin-left: 32px;}
+    .ml-124{margin-left: 124px;}
+    .ml-136{margin-left: 136px;}
+    /* margin */
+    .flex{display: flex;}
+    .flex-Col{flex-direction: column;}
+    .justify-center{justify-content: center;}
+    .align-center{align-items: center;}
+    .text-justify{text-align: justify;}
+    /* layout */
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="w-1920 h-140 bgc-219 flex">
+      <div class="w-384 h-140 bgcW ml-124"></div>
+      <p class="mt-114 ml-32 fs-12 fw-900 colorW">Fullstack Developer Training for Expert</p>
+      <div class="w-10 h-140 bgcW ml-136"></div>
+    </div>
+    <div class="flex">
+      <div class="w-384 h-573 mt-160 ml-124 border flex flex-Col align-center">
+        <div class="w-335 h-414 mt-33 fs-96 fw-700 line">
+          <p>DON'T</p>
+          <p class="color-219">DWELL</p>
+          <p class="color-219">ON</p>
+          <p class="color-219">THE</p>
+          <p>PAST</p>
+        </div>
+        <hr class="w-335 color-219 ">
+        <p class="w-335 mt-17 fs-12">Experience training in field projects with the<br>Green Computer Academy and digital companies</p>
+      </div>
+      <p class="w-360 h-573 mt-160 ml-32 fs-12 fw text-justify">
+      <!-- 각 블록의 크기를 일치화 시켜 margin 설정을 더욱 용이하기 위해 이전 블록과 같은 값의 height로 설정 -->
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, totam nisi, excepturi numquam temporibus natus culpa voluptates sed ipsum, sunt vero tempora eaque commodi ratione autem veritatis atque cupiditate earum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex reiciendis ea hic rem illum voluptates inventore praesentium soluta! Tempore quas eum ad nam repellat molestias animi excepturi, rerum commodi facere.<br> <span class="color-219">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span> Voluptas natus rem inventore nobis doloribus ut quis nulla excepturi mollitia placeat, magnam quasi illo! Praesentium quos unde ratione nemo eveniet id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, animi? Ducimus ipsam quia perferendis animi eius necessitatibus reiciendis quod modi delectus? Eaque quae error tempora dignissimos, hic iste odit velit?
+      </p>
+      <div class="w-1000 h-573 mt-160 ml-20 flex">
+        <div class="mt-352">
+          <div class="w-20 h-20 ml-20 line bgc-219"></div>
+          <div class="w-20 h-20 m-20 bgc-219"></div>
+          <div class="w-20 h-20 m-20 bgc-219"></div>
+          <div class="w-20 h-20 m-20 bgc-219"></div>
+          <div class="w-20 h-20 m-20 bgc-219"></div>
+          <div class="w-20 h-20 m-20 bgc-219"></div>
+        </div>
+        <div class="w-960 h-221 mt-352 bgc-219"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

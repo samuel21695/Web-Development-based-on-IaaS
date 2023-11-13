@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <ul>
+      <li>피카츄</li>
+      <li>라이츄</li>
+      <li>파이리</li>
+      <li>꼬부기</li>
+      <li>버터풀</li>
+      <li>야도란</li>
+      <li>이상해씨</li>
+      <li>꼬마돌</li>
+      <li>깨비참</li>
+      <li>또도가스</li>
+      <li>냐옹</li>
+      <li>마자용</li>
+    </ul>
+  </div>
+
+  <script>
+
+    // let root = document.getElementById('root').children[0].children[0];
+    let liItems = document.getElementsByTagName('li');
+    // console.dir(root);
+    // console.log(liItems);
+
+    // for(let index = 0; index < liItems.length-2; index++) {
+    //   liItems[index].style.color = "red";
+    // }
+
+    let ul = document.getElementsByTagName('ul');
+    console.dir(ul);
+    console.dir(liItems);
+    console.log(liItems.length);
+   
+    const rainbow = ["red", "orange", "yellow", "green", "blue", "cyan", "purple", "salmon", "olive", "lightgreen", "gray", "pink"];
+    console.log(rainbow);
+
+    for(let i = 0; i < liItems.length; i++) {
+      liItems[i].style.color = rainbow[i]
+    }
+    // i가 0으로 시작하고, i가 liItems의 길이 값보다 적을때, i가 1씩 증가하는 반복문을 생성할게
+    // 이렇게 반복할 때liItems안에 i번째 순서의 있는 스타일의 색깔의 값을 rainbow라는 변수의 i번째 있는 값과 동일하게 대입해줘
+    // for라는 반복문을 생성해 볼건데 먼저 for를 작성하고 i라는 변수를 지정하고 0부터 시작한다고 설정하면
+
+    console.log("마지막 색깔은 " + liItems[length].style.color + "입니다.");
+  </script>
+</body>
+</html>

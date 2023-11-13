@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @font-face {
+      font-family: Kaushan;
+      src: url(KaushanScript-Regular.ttf) format(truetype);
+    } 
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div></div>
+    <div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam autem provident vitae. Consequatur impedit minima quaerat natus, eveniet tempora iusto ex nemo hic repellat error ducimus sapiente quis autem.</p>
+    </div>
+    <div>
+      <ul>
+        <li>Seize</li>
+        <li>The</li>
+        <li>Day</li>
+      </ul>
+    </div>
+  </div>
+  
+  <script>
+    var doc = document;
+    console.dir(document);
+
+    const body = document.body
+    body.style.cssText = "margin: 0; padding: 0; display:flex;";
+    // .cssText를 사용하여 한꺼번에 많은 스타일을 처리하기위함.
+    
+
+    const root = document.getElementById('root')
+    root.style.cssText = "width: 100vw; height: 100vh; display:flex; background: url(images/image1.jpg), lightgray 50%;, #D9D9D9; background-size:cover; background-position:center; background-repeat:no-repeat;"
+
+    console.dir(root);
+
+    const box_1 = root.children[0]
+    box_1.style.cssText= "width: 25vw; height: 100vh; background: rgba(96, 96, 96, 0.6); mix-blend-mode: multifly;"
+
+    const box_2 = root.children[1]
+    box_2.style.cssText= "width: 80vw; height: 15vh; margin-top: 70vh; background: #ABABAB;mix-blend-mode: color-dodge; color: white; font-size: 0.5em; font-family: Kaushan;"
+
+    const box_3 = root.children[2]
+    box_3.style.cssText= "width: 60vw; height: 40vh; position: absolute; margin: 17vh 15vw ;"
+    
+    const ul = box_3.children[0]
+    ul.style.cssText = "list-style: none; padding-left: 0; font-size: 6em; font-family: Kaushan; line-height: 1em;"
+    const li_0 = ul.children[0];
+    li_0.style.cssText = "color: #f66; mix-blend-mode:color-dodge;"
+    const li_1 = ul.children[1];
+    li_1.style.cssText = "color: #f66; mix-blend-mode:color-dodge;"
+    const li_2 = ul.children[2];
+    li_2.style.cssText = "color: #f66; mix-blend-mode:color-dodge;"
+    // ul의 자식 태그들인 li들을 한꺼번에 처리할 수 있는 방안은 없을까
+    
+  </script>
+</body>
+</html>

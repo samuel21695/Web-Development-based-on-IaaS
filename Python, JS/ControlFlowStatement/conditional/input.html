@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <input type="text" id="text" onblur="getVal()"/>
+  <input type="submit">
+  <script>
+    const body = window.document.body
+    console.dir(body);
+    
+    function getVal() {
+      const val = document.querySelector('input').value;
+      console.log(val);
+      
+      if (val == "black") {
+      root.style.width = "100px";
+      root.style.height = "100px";
+      root.style.backgroundColor = "black";
+      root.style.borderbox 
+      } else {
+        root.style.backgroundColor = "white";
+      }
+      if (val == "gray") {
+        root.style.width = "200px";
+        root.style.height = "200px";
+        root.style.backgroundColor = "gray";
+      }
+      if (val == "orange") {
+        root.style.width = "300px";
+        root.style.height = "300px";
+        root.style.backgroundColor = "orange"; 
+      } 
+      }
+
+    // if (val == black) {
+    //   root.style.backgroundColor = "black;"
+    //   root.style.width = "100px";
+    //   root.style.height = "100px";
+    // }
+    // if (val == gray) {
+    //   root.style.backgroundColor = "gray;"
+    //   root.style.width = "200px";
+    //   root.style.height = "200px";
+    // }
+    // if (val == orange) {
+    //   root.style.backgroundColor = "orange;"
+    //   root.style.width = "300px";
+    //   root.style.height = "300px";
+    // }
+
+    // if(root.style.backgroundColor === "black") {
+    //   root.style.width = "100px";
+    //   root.style.height = "100px";
+    // }
+    // if(root.style.backgroundColor === "gray") {
+    //   root.style.width = "200px";
+    //   root.style.height = "200px";
+    // }
+    // if(root.style.backgroundColor === "orange") {
+    //   root.style.width = "300px";
+    //   root.style.height = "300px";
+    // }
+  </script>
+</body>
+</html>

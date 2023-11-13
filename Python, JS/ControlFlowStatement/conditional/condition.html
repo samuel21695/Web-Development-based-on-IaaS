@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <button>click</button>
+  </div>
+  <script>
+    let btn = window.document.body.children[0].
+    children[0];
+    console.dir(btn);
+    // let buttonQuery = document.querySelector('#root > button');
+    // console.dir(buttonQuery);
+
+      let handler = true; // 초기화
+
+    btn.addEventListener('click', function() {
+      
+      if (handler === true) {
+        handler = false;
+        console.log(handler);
+      } else {
+        handler = true;
+        console.log(handler);
+      }
+
+      if(handler === true) {
+        window.document.body.style.backgroundColor = "black";
+      } else {
+        window.document.body.style.backgroundColor = "white";
+      }
+
+      if(handler === true) {
+        btn.style.backgroundColor = "white";
+      } else{
+        btn.style.backgroundColor = "black";
+      }
+    });
+  </script>
+</body>
+</html>

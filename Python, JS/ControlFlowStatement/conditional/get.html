@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <input type="text">
+  <input type="button" value="">
+  <script>
+    let root = document.getElementById('root');
+    root.style.backgroundColor = "orange"
+    console.dir(root.style);
+    let text = myTextInput.value;
+    if(root.style.backgroundColor === "black") {
+      root.style.width = "100px";
+      root.style.height = "100px";
+    }
+    if(root.style.backgroundColor === "gray") {
+      root.style.width = "200px";
+      root.style.height = "200px";
+    }
+    if(root.style.backgroundColor === "orange") {
+      root.style.width = "300px";
+      root.style.height = "300px";
+    }
+  </script>
+</body>
+</html>

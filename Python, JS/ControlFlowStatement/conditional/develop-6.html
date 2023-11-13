@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <h1 id="prompt-text"></h1>
+  <label for="color-value">type of color</label>
+  <input type="text" name="color-value" id="color-value">
+  <br><br>
+  <label for="font-size">size of font</label>
+  <input type="text" name="font-size" id="font-size">
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime impedit vitae iure exercitationem voluptatem. Et nulla nobis iusto tenetur! Temporibus blanditiis labore sequi repellat illum distinctio deserunt obcaecati ducimus nam.</p>
+  <script>
+    let promptText = document.getElementById('prompt-text');
+    let colorValue = document.getElementById('color-value');
+    root.style.width="100px"
+    root.style.height="100px"
+
+    colorValue.addEventListener('change', function(){   
+      root.style.backgroundColor = colorValue.value     
+    })
+    let fontValue = document.getElementById('font-size')
+    colorValue.addEventListener('change', function(){
+      root.style.fontSize = colorValue.value
+    })
+
+    //   if (promptText.textContent = colorValue.value) 
+
+    //   if(colorValue.value === "black") {
+    //   root.style.width = "100px";
+    //   root.style.height = "100px";
+    //   root.style.backgroundColor = "black";
+    //   promptText.style.color = "black";
+    // } 
+    //   else if(colorValue.value === "gray") {
+    //   root.style.width = "100px";
+    //   root.style.height = "100px";
+    //   root.style.backgroundColor = "gray";
+    //   promptText.style.color = "gray";
+    // }
+    //   else if(colorValue.value === "red") {
+    //   root.style.width = "100px";
+    //   root.style.height = "100px";
+    //   root.style.backgroundColor = "red";
+    //   promptText.style.color = "red";
+    // }
+    //   else {
+    //     root.style.width = 0;
+    //     root.style.height = 0;
+    //     root.style.backgroundColor = "white";
+    //     promptText.style.color = "black";
+    //   }
+
+
+  </script>
+</body>
+</html>

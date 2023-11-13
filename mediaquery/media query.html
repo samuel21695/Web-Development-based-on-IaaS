@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device=width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    *{transition: 1s;}
+
+    #root {
+      width:100vw;
+      height:100vh;
+    }
+
+    @media (min-width: 1000px) and (max-width:1920px) {
+      /* 최소값 1000px ~ 최대값 1920px 까지 적용된다. */
+      #root {
+        background-color: olivedrab;
+      }
+    }
+    @media (min-width: 500px) and (max-width:1000px) {
+      #root {
+        background-color: goldenrod;
+      }
+    }
+    @media (min-width: 300px) and (max-width:499px) {
+      #root {
+        background-color:black;
+        font-size: 32px;
+        font-weight: 700;
+        color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+  </style>
+</head>
+<body>
+  <div id="root">SAMSUNG
+  </div>
+  
+</body>
+</html>

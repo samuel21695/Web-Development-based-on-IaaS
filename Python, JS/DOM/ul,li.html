@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>
+  <script>
+    var a = document.body.children[0];
+    console.dir(a)
+
+    a.children[0].style.color = "red";
+    a.children[0].style.backgroundColor = "orange";
+
+    a.children[1].style.color = "blue";
+    a.children[1].style.backgroundColor = "cyan";
+
+
+    a.children[2].style.color = "green";
+    a.children[2].style.backgroundColor = "lightgreen";
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #root {
+      width: 100vw;
+      height: 100vh;
+      background-color: #ccc;
+      /* flex-set */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* 왼쪽 <div> 태그 */
+      #root>div:nth-child(1) {
+        width: 40vw;
+        height: 100vh;
+        background-color: #333;
+        /* flex-set */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction */
+        flex-direction: column;
+      }
+      #root>div:nth-child(1) div{
+        width: 40px;
+        height: 40px;
+        margin: 20px;
+        background-color: #ccc;
+      }
+      /* 오른쪽 <div> 태그 */
+      #root>div:nth-child(2) {
+        width: 60vw;
+        height: 100vh;
+        background-color: #ff7777;
+        /* flex-set */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #root>div:nth-child(2)>div {
+        width: 800px;
+        height: 800px;
+        background-color: #ccc;
+      }
+      #root>div:nth-child(2)>div>div {
+        width: 400px;
+        height: 400px;
+        background-color: #bbb;
+      }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div>
+    <!-- 작은 네모들 여러개 -->
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
